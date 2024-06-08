@@ -38,7 +38,7 @@ Tabellen:
 - Buchungsmanagement: Durchführung und Verwaltung von Autovermietungen.
 
 5. Zeitplan
-Das Projekt soll bis zum 6. Juni 2024 abgeschlossen sein. Dies beinhaltet die Phasen der Planung, Entwicklung, Testing und Implementierung.
+- Das Projekt soll bis zum 6. Juni 2024 abgeschlossen sein. Dies beinhaltet die Phasen der Planung, Entwicklung, Testing und Implementierung.
 
 6. Verwendung
 - starten: docker compose up (in Terminal)
