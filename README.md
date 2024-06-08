@@ -22,6 +22,8 @@ Technologische Anforderungen:
 Software-Anforderungen:
 - Entwicklungsumgebung: IntelliJ IDEA
 - Versionskontrolle: Git, gehostet auf GitHub.
+- docker
+- maven (optional, inkludiert in IntelliJ)
 
 3. Datenbankstruktur
 Tabellen:
@@ -38,7 +40,14 @@ Tabellen:
 5. Zeitplan
 Das Projekt soll bis zum 6. Juni 2024 abgeschlossen sein. Dies beinhaltet die Phasen der Planung, Entwicklung, Testing und Implementierung.
 
-6. Meilensteine
+6. Verwendung
+- starten: docker compose up (in Terminal)
+- gestartet wird: Datenbank und Webseite
+- Webseite auf: localhost:8080
+- DatabaseManager Klasse verwaltet die Datenbank und ihre Daten. Darin werden auch die sqls für die Eintragung der Daten per DAOs geschreiben. 
+- 
+
+7. Meilensteine
 - Projektstart: Mai 2024
 - Vollständige Implementierung und Deployment: Mai 2024
 - Projektabschluss und Übergabe: Juni 2024

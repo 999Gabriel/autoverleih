@@ -37,6 +37,14 @@ $query = $pdo->prepare($queryStr);
 $query->execute($params);
 $autos = $query->fetchAll(PDO::FETCH_ASSOC);
 
+// Buchungen abrufen
+$buchungenQueryStr = "SELECT b.*, a.modell, a.marke, k.name as kunde_name FROM buchungen b
+                      LEFT JOIN autos a ON b.auto_id = a.id
+                      LEFT JOIN kunden k ON b.kunde_id = k.id";
+$buchungenQuery = $pdo->prepare($buchungenQueryStr);
+$buchungenQuery->execute();
+$buchungen = $buchungenQuery->fetchAll(PDO::FETCH_ASSOC);
+
 // Debugging-Informationen anzeigen
 /*echo "<pre>";
 print_r($autos);
@@ -141,6 +149,37 @@ echo "</pre>";
                 <?php else: ?>
                     <tr>
                         <td colspan="5">Keine Autos gefunden.</td>
+                    </tr>
+                <?php endif; ?>
+            </tbody>
+        </table>
+<h2>Buchungen</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Modell</th>
+                    <th>Marke</th>
+                    <th>Kunde</th>
+                    <th>Startdatum</th>
+                    <th>Enddatum</th>
+                    <th>Gesamtpreis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if (count($buchungen) > 0): ?>
+                    <?php foreach ($buchungen as $buchung): ?>
+                        <tr>
+                            <td><?php echo htmlspecialchars($buchung['modell']); ?></td>
+                            <td><?php echo htmlspecialchars($buchung['marke']); ?></td>
+                            <td><?php echo htmlspecialchars($buchung['kunde_name']); ?></td>
+                            <td><?php echo htmlspecialchars($buchung['startdatum']); ?></td>
+                            <td><?php echo htmlspecialchars($buchung['enddatum']); ?></td>
+                            <td><?php echo htmlspecialchars($buchung['gesamtpreis']); ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="6">Keine Buchungen gefunden.</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
