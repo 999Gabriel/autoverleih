@@ -1,3 +1,5 @@
+package com.gabriel;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.j256.ormlite.dao.Dao;
