@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class DatabaseManager
 {
-    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/autoverleih?user=root&useSSL=false&serverTimezone=Europe/Berlin&allowPublicKeyRetrieval=true";
+    private static final String DATABASE_URL = "jdbc:mysql://127.0.0.1:3306/autoverleih?user=root&password=macintosh&useSSL=false&serverTimezone=Europe/Berlin&allowPublicKeyRetrieval=true";
 
     private static Dao<Kunde, Integer> customerDao;
     private static Dao<Auto, Integer> carDao;
