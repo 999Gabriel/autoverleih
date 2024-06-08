@@ -5,10 +5,10 @@ error_reporting(E_ALL);
 
 
 // Datenbankverbindung herstellen
-$host = 'localhost';
+$host = 'db';
 $dbname = 'autoverleih';
 $username = 'root';
-$password = ''; // Leeres Passwort für XAMPP
+$password = 'macintosh';
 $port = 3306;
 
 try {
