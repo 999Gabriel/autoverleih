@@ -25,18 +25,15 @@ Software-Anforderungen:
 
 3. Datenbankstruktur
 Tabellen:
-- Kunden (Customers)
-- Autos (Cars)
-- Buchungen (Rentals)
-- Autozubehör (Car Accessories)
-- Schadensberichte (Damage Reports)
+- Kunden 
+- Autos 
+- Buchungen
+- Kunden_Autos 
 
 4. Systemfunktionalitäten
 - Kundenmanagement: Erfassung und Verwaltung von Kundeninformationen.
 - Fahrzeugmanagement: Aufnahme neuer Fahrzeuge ins System und Verwaltung des Fahrzeugstatus.
 - Buchungsmanagement: Durchführung und Verwaltung von Autovermietungen.
-- Schadensmanagement: Dokumentation und Verwaltung von Fahrzeugschäden.
-- Berichtswesen: Generierung von Berichten über Vermietungen, Fahrzeugzustände und finanzielle Übersichten.
 
 5. Zeitplan
 Das Projekt soll bis zum 6. Juni 2024 abgeschlossen sein. Dies beinhaltet die Phasen der Planung, Entwicklung, Testing und Implementierung.
