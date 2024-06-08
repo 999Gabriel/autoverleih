@@ -44,8 +44,7 @@ Das Projekt soll bis zum 6. Juni 2024 abgeschlossen sein. Dies beinhaltet die Ph
 - starten: docker compose up (in Terminal)
 - gestartet wird: Datenbank und Webseite
 - Webseite auf: localhost:8080
-- DatabaseManager Klasse verwaltet die Datenbank und ihre Daten. Darin werden auch die sqls für die Eintragung der Daten per DAOs geschreiben. 
-- 
+- DatabaseManager Klasse verwaltet die Datenbank und ihre Daten. Darin werden auch die sqls für die Eintragung der Daten per DAOs geschreiben.
 
 7. Meilensteine
 - Projektstart: Mai 2024
